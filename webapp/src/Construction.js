@@ -37,7 +37,7 @@ function Construction() {
               {String(time.getMonth() + 1).padStart(2, '0') + '/' + String(time.getDate()).padStart(2, '0') + '/' + + String(time.getFullYear())}
               <br></br>
               {String(time.getHours()).padStart(2, '0') + ':' + String(time.getMinutes()).padStart(2, '0')}</h2>
-            <h2>COMING<br></br>SOON</h2>
+            <h2>COMING SOON</h2>
           </center> 
         </div>
       </div>
