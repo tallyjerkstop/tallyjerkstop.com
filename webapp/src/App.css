@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+  font-family: Arial;
+ }
+
+ body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #e8dd1d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contentWrapper {
+  width: auto;
+  max-width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.react-clock__hand__body {
+  background-color: #e8dd1d !important;
+}
+
+.react-clock__mark__body {
+  background-color: white !important;
+}
+
+.construction {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media only screen and (min-width: 350px) and (max-width: 600px)
+{
+  .contentWrapper {
+    min-width: 325px;
+    width: auto;
+    height: auto;
+    max-height: 570px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .construction {
+    height: 80vh;
   }
+
+}
+@media only screen and (min-width: 100px) and (max-width: 349px)
+{
+  .contentWrapper {
+    min-width: 325px;
+    width: auto;
+    height: auto;
+    max-height: 570px;
+  }
+
+  .construction {
+    height: 80vh;
+  }
+
 }
